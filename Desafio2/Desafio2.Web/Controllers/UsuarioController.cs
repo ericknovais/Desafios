@@ -67,7 +67,7 @@ namespace Desafio2.Web.Controllers
                 if (!ModelState.IsValid)
                     return View(entidade);
 
-                var usuario = repositorio.Usuario.UsuarioExiste(entidade.Login, entidade.Senha);
+                var usuario = repositorio.Usuario.UsuarioExiste(entidade.Login.ToLower(), entidade.Senha);
                 if (usuario.Count.Equals(0))
                 {
                     ModelState.AddModelError("Login", "Usuário ou Senha Invalido!");
@@ -105,11 +105,11 @@ namespace Desafio2.Web.Controllers
         private void VerificaLoginEEmail(CadastroUsuarioViewModel entidade)
         {
             StringBuilder _msg = new StringBuilder();
-            if (repositorio.Usuario.UsuarioExiste(entidade.Login).Count > 0)
+            if (repositorio.Usuario.UsuarioExiste(entidade.Login.ToLower()).Count > 0)
                 _msg.Append($"O usuario <b>{entidade.Login}</b> já esta sendo usado no sistema!" + Environment.NewLine);
 
-            if (repositorio.Usuario.UsuarioExiste(entidade.Email).Count > 0)
-                _msg.Append($"O e-mail <b>{entidade.Email}<b> já esta sendo usado no sistema!" + Environment.NewLine);
+            if (repositorio.Usuario.UsuarioExiste(entidade.Email.ToLower()).Count > 0)
+                _msg.Append($"O e-mail <b>{entidade.Email}</b> já esta sendo usado no sistema!" + Environment.NewLine);
 
             if (_msg.Length > 0)
                 throw new Exception(_msg.ToString());
