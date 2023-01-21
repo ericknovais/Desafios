@@ -1,0 +1,14 @@
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\DataAccess.Desafio1.dll
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\DataAccess.Desafio1.pdb
+C:\Estudos\Desafio1\DataAccess.Desafio1\obj\Debug\DataAccess.Desafio1.csproj.AssemblyReference.cache
+C:\Estudos\Desafio1\DataAccess.Desafio1\obj\Debug\DataAccess.Desafio1.csproj.CoreCompileInputs.cache
+C:\Estudos\Desafio1\DataAccess.Desafio1\obj\Debug\DataAccess.Desafio1.dll
+C:\Estudos\Desafio1\DataAccess.Desafio1\obj\Debug\DataAccess.Desafio1.pdb
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\DataAccess.Desafio1.dll.config
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\DomainModel.Desafio1.dll
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\EntityFramework.dll
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\DomainModel.Desafio1.pdb
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\EntityFramework.xml
+C:\Estudos\Desafio1\DataAccess.Desafio1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Estudos\Desafio1\DataAccess.Desafio1\obj\Debug\DataAccess.Desafio1.csproj.CopyComplete
