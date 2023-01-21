@@ -1,0 +1,14 @@
+C:\estudos\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.csproj.AssemblyReference.cache
+C:\estudos\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.csproj.CoreCompileInputs.cache
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DataAccess.dll.config
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DataAccess.dll
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DataAccess.pdb
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DomainModel.dll
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\EntityFramework.dll
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DomainModel.pdb
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\EntityFramework.xml
+C:\estudos\Desafio2\Desafio2.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\estudos\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.csproj.CopyComplete
+C:\estudos\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.dll
+C:\estudos\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.pdb

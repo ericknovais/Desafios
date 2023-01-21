@@ -1,0 +1,6 @@
+C:\estudos\Desafio2\Desafio2.DomainModel\bin\Debug\Desafio2.DomainModel.dll
+C:\estudos\Desafio2\Desafio2.DomainModel\bin\Debug\Desafio2.DomainModel.pdb
+C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.csproj.CoreCompileInputs.cache
+C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.dll
+C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.pdb
+C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.csproj.AssemblyReference.cache
