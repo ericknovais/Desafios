@@ -1,0 +1,128 @@
+﻿@model IEnumerable<DomainModel.Desafio1.Classes.Cidade>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <div class="mt-4"></div>
+
+            <div class="card mb-4">
+                <a href="@Url.Action("Edit","Cidade")">
+                    <div class="card-header">
+                        <i class="fas fa-plus mr-1"></i>
+                        Incluir Cidade
+                    </div>
+                </a>
+
+                <div class="card-body">
+                    <div class="table-responsive">
+
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Editar</th>
+                                    <th>Cidade</th>
+                                    <th>Estado</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <a class="nav-link" href="@Url.Action("Edit", "Cidade", new { id = item.ID })">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                        </td>
+                                        <td>@item.Nome</td>
+                                        <td>@item.Estado.Nome</td>
+                                        <td>
+                                            <a class="nav-link" href="@Url.Action("Delete", "Cidade", new { id = item.ID })">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Botão oculto que abre o modal de Alerta -->
+                    <button id="btnModalErro" type="button" style="display: none;" data-toggle="modal" data-target="#modalErro"></button>
+
+                    @if (TempData["Alerta"] != null)
+                    {<!-- Modal -->
+                        <div id="modalErro" class="modal fade" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <!-- Cabeçalho do modal -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">
+                                            ATENÇÃO
+                                            <i class="fas fa-exclamation-triangle"></i>
+                                        </h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Corpo do modal -->
+                                    <div class="modal-body">
+                                        <p>
+                                            @Html.Raw(@TempData["Alerta"])
+                                        </p>
+                                    </div>
+                                    <!-- Rodapé do modal-->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        @*<script src="~/Scripts/jquery-3.4.1.min.js"></script>*@
+        <script src="~/Scripts/jquery.validate.min.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+        @section Scripts {
+            <script>
+                $(document).ready(function () {
+                    $("#btnModalSucesso").click()
+                    $("#btnModalErro").click()
+                });</script>
+        }
+    </main>
+</div>
+
+@*<h2>List</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Edit")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+
+    </table>*@
