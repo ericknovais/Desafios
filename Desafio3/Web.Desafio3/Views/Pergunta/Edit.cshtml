@@ -1,0 +1,84 @@
+﻿@model Desafio3.AppWeb.ViewModels.PerguntaRespostaViewModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    if (TempData["Sucesso"] != null)
+    {
+        @Html.Partial("../Modal/Sucesso")
+    }
+
+    if (TempData["Alerta"] != null)
+    {
+        @Html.Partial("../Modal/Alerta")
+    }
+
+    var qtdRespostas = Model.Pergunta.IsEmpty() ? Model.MinimoResposta : Model.Respostas.Count;
+}
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="card shadow-lg border-0 rounded-lg mt-5">
+                        <div class="card-header">
+                            <h3 class="text-center font-weight-light my-4">
+                                @Html.Raw(TempData["EnInclusao"])
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-md-12">
+                                            @Html.LabelFor(model => model.Pergunta, htmlAttributes: new { @class = "small mb-1" })
+                                            <div class="form-group">
+                                                @Html.EditorFor(model => model.Pergunta, "Pergunta", new { htmlAttributes = new { @class = "form-control py-6" } })
+                                                @Html.ValidationMessageFor(model => model.Pergunta, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="respostas">
+                                        @for (int i = 0; i < qtdRespostas; i++)
+                                        {
+                                            <div class="form-row">
+                                                <div class="col-md-9">
+                                                    @Html.LabelFor(model => model.Respostas[i].Descricao, $"Resposta {i + 1}", htmlAttributes: new { @class = "small mb-1" })
+                                                    <div class="form-group">
+                                                        @Html.EditorFor(model => model.Respostas[i].Descricao, new { htmlAttributes = new { @class = "form-control py-6" } })
+                                                        @Html.ValidationMessageFor(model => model.Respostas[i].Descricao, "", new { @class = "text-danger" })
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-1">
+                                                    @Html.EditorFor(model => model.Respostas[i].ID, new { htmlAttributes = new { @class = "invisible", @id = $"RespostaID{i}" } })
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="small mb-1">Correto</label>
+                                                    <div class="form-group">
+                                                        @Html.EditorFor(model => model.Respostas[i].Correto, "Correto", new { htmlAttributes = new { @id = $"correto{i}", @class = "radio", @onclick = "seleciona(this)" } })
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                    <div>
+                                        <input type="button" class="fas fa-plus btn-outline-primary" onclick="maisResposta();" data-toggle="tooltip"  title="Adiciona mais um resposta"/>
+                                        <input type="button" class="fas fa-trash btn-outline-primary" onclick="menosResposta();" data-toggle="tooltip"  title="Remove a última resposta" />
+                                    </div>
+                                    <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                        <div class="small"></div>
+                                        <input id="Salvar" type="submit" value="Salvar" class="btn btn-primary" />
+                                    </div>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

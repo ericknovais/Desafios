@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Desafio3.DomainModel.model.Pergunta>
+
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    if (TempData["Alerta"] != null)
+    {
+        @Html.Partial("../Modal/Alerta")
+    }
+}
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <div class="mt-4"></div>
+            <div class="card mb-4">
+                <a href="@Url.Action("Edit","Pergunta")">
+                    <div class="card-header">
+                        <i class="fas fa-plus mr-1"></i>
+                        Incluir Perguntas
+                    </div>
+                </a>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Editar</th>
+                                <th>Pergunta</th>
+                                <th>Excluir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <a class="nav-link" href="@Url.Action("Edit", "Pergunta", new { id = item.ID })">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                    </td>
+                                    <td>@item.Descricao</td>
+                                    <td>
+                                        <a class="nav-link" href="@Url.Action("Delete", "Pergunta", new { id = item.ID })">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

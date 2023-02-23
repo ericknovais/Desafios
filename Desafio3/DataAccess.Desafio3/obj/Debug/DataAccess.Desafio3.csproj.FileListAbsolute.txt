@@ -1,0 +1,14 @@
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\DataAccess.Desafio3.dll.config
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\DataAccess.Desafio3.dll
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\DataAccess.Desafio3.pdb
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\DomainModel.Desafio3.dll
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\EntityFramework.dll
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\DomainModel.Desafio3.pdb
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\EntityFramework.xml
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\obj\Debug\DataAccess.Desafio3.csproj.AssemblyReference.cache
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\obj\Debug\DataAccess.Desafio3.csproj.CoreCompileInputs.cache
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\obj\Debug\DataAccess.Desafio3.csproj.CopyComplete
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\obj\Debug\DataAccess.Desafio3.dll
+D:\Projetos\Desafios\Desafio3\DataAccess.Desafio3\obj\Debug\DataAccess.Desafio3.pdb

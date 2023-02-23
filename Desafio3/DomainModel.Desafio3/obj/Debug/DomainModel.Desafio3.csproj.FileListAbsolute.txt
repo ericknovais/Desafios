@@ -1,0 +1,5 @@
+D:\Projetos\Desafios\Desafio3\DomainModel.Desafio3\bin\Debug\DomainModel.Desafio3.dll
+D:\Projetos\Desafios\Desafio3\DomainModel.Desafio3\bin\Debug\DomainModel.Desafio3.pdb
+D:\Projetos\Desafios\Desafio3\DomainModel.Desafio3\obj\Debug\DomainModel.Desafio3.csproj.CoreCompileInputs.cache
+D:\Projetos\Desafios\Desafio3\DomainModel.Desafio3\obj\Debug\DomainModel.Desafio3.dll
+D:\Projetos\Desafios\Desafio3\DomainModel.Desafio3\obj\Debug\DomainModel.Desafio3.pdb

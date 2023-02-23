@@ -1,0 +1,73 @@
+﻿@model Desafio3.AppWeb.ViewModels.PerguntaRespostaViewModel
+
+@{
+    ViewBag.Title = "Quiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    int contPergunta = 1;
+    int contResposta = 1;
+    int contAbc = 0;
+    string[] abc = { "A  - ", "B  - ", "C  - ", "D  - ", "E  - " };
+
+    if (TempData["Alerta"] != null)
+    {
+        @Html.Partial("../Modal/Alerta")
+    }
+}
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid">
+            <div class="mt-4"></div>
+            <div class="card mb-4">
+                @using (Html.BeginForm())
+                {
+                    <form>
+                        <div class="card-header">
+                            <h5>Quiz</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <input type="hidden" checked="@Model.LimpaRadio" id="limparRadio" />
+                                @foreach (var item in Model.Perguntas.Take(Model.LimitePergunta))
+                                {
+                                    <div id="PerguntaID_@item.ID" class="pergunta">
+                                        <h5 class="card-title">
+                                            @contPergunta - @item.Descricao
+                                            <input type="hidden" value="@item.ID" name="Perguntas[@(contPergunta - 1)].ID" id="IDPergunta_@contPergunta" class="invisible" />
+                                            <input type="hidden" value="@item.Descricao" name="Perguntas[@(contPergunta - 1)].Descricao" class="invisible" />
+                                        </h5>
+                                        @foreach (var respostas in Model.Respostas.Where(x => x.PerguntaID == item.ID).ToList())
+                                        {
+                                            <div>
+                                                &emsp;
+                                                @abc[contAbc].ToLower()
+                                                <input type="radio" class="radio" checked="@Convert.ToBoolean(respostas.Correto)" value="true" name="Respostas[@(contResposta - 1)].Correto" id="correto_@contResposta" />
+                                                &emsp;@respostas.Descricao
+                                                <input type="hidden" value="@respostas.ID" name="Respostas[@(contResposta - 1)].ID" id="IDResposta_@contResposta" />
+                                                <input type="hidden" value="@respostas.Descricao" name="Respostas[@(contResposta - 1)].Descricao" />
+                                                <input type="hidden" value="@item.ID" name="Respostas[@(contResposta - 1)].PerguntaID" />
+                                            </div>
+                                            contResposta++;
+                                            contAbc++;
+                                        }
+                                    </div>
+                                    contPergunta++;
+                                    contAbc = 0;
+                                    <br />
+                                }
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="form-group d-flex justify-content-between mt-4 mb-0">
+                                <div class="small"></div>
+                                <input id="Responder" type="submit" value="Responder" class="btn btn-lg btn-secondary" disabled/>
+                            </div>
+                        </div>
+                    </form>
+                }
+            </div>
+        </div>
+    </main>
+</div>
+
