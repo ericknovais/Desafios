@@ -4,3 +4,9 @@ C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.csproj.C
 C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.dll
 C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.pdb
 C:\estudos\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.csproj.AssemblyReference.cache
+D:\Projetos\Desafios\Desafio2\Desafio2.DomainModel\bin\Debug\Desafio2.DomainModel.dll
+D:\Projetos\Desafios\Desafio2\Desafio2.DomainModel\bin\Debug\Desafio2.DomainModel.pdb
+D:\Projetos\Desafios\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.csproj.AssemblyReference.cache
+D:\Projetos\Desafios\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.csproj.CoreCompileInputs.cache
+D:\Projetos\Desafios\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.dll
+D:\Projetos\Desafios\Desafio2\Desafio2.DomainModel\obj\Debug\Desafio2.DomainModel.pdb

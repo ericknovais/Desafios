@@ -10,11 +10,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Desafio2.DataAccess</RootNamespace>
     <AssemblyName>Desafio2.DataAccess</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,6 +55,15 @@
     <Compile Include="DB\ContextoDB.cs" />
     <Compile Include="GenericAbstract\AbstractRepositorio.cs" />
     <Compile Include="GenericAbstract\Repositorio.cs" />
+    <Compile Include="Migrations\202301192026482_InitialCreate.cs" />
+    <Compile Include="Migrations\202301192026482_InitialCreate.designer.cs">
+      <DependentUpon>202301192026482_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303221937011_ColunaAtivo.cs" />
+    <Compile Include="Migrations\202303221937011_ColunaAtivo.designer.cs">
+      <DependentUpon>202303221937011_ColunaAtivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\UsuaioRepositorio.cs" />
   </ItemGroup>
@@ -67,7 +77,14 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202301192026482_InitialCreate.resx">
+      <DependentUpon>202301192026482_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221937011_ColunaAtivo.resx">
+      <DependentUpon>202303221937011_ColunaAtivo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

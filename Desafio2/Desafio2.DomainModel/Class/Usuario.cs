@@ -15,6 +15,8 @@ namespace Desafio2.DomainModel.Class
         public string Email { get; set; }
 
         public string Senha { get; set; }
+        
+        public bool Ativo { get; set; }
 
         private string _msgEmail = "Email esta em um formato invalido";
 
