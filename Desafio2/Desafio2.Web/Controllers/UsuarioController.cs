@@ -38,7 +38,8 @@ namespace Desafio2.Web.Controllers
                     Email = entidade.Email.ToLower(),
                     Senha = entidade.Senha,
                     DataCadastro = DateTime.Now,
-                    DataAtualizacao = DateTime.Now
+                    DataAtualizacao = DateTime.Now,
+                    Ativo = false
                 };
                 usuario.Validar();
                 repositorio.Usuario.Salvar(usuario);
@@ -73,6 +74,9 @@ namespace Desafio2.Web.Controllers
                     ModelState.AddModelError("Login", "Usuário ou Senha Invalido!");
                     return View(entidade);
                 }
+
+                if (usuario.First().Ativo.Equals(false))
+                    throw new Exception("Usuário Inativo");
 
                 ClaimsIdentity identity = new ClaimsIdentity(new[]
                     {

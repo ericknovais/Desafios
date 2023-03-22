@@ -21,5 +21,11 @@ namespace Desafio2.DomainModel.Class
             if (_msgErro.Length > 0)
                 throw new Exception(_msgErro.ToString());
         }
+
+        public void ValidarCampoTexto(string campo) 
+        {
+            if (campo.Length.Equals(0))
+                _msgErro.Append($"O campo {campo} é obrigatório");
+        }
     }
 }

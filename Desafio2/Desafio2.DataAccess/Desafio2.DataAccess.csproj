@@ -63,6 +63,10 @@
     <Compile Include="Migrations\202303221937011_ColunaAtivo.designer.cs">
       <DependentUpon>202303221937011_ColunaAtivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303221953039_Ajuste Nome tabela.cs" />
+    <Compile Include="Migrations\202303221953039_Ajuste Nome tabela.designer.cs">
+      <DependentUpon>202303221953039_Ajuste Nome tabela.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\UsuaioRepositorio.cs" />
@@ -83,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303221937011_ColunaAtivo.resx">
       <DependentUpon>202303221937011_ColunaAtivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303221953039_Ajuste Nome tabela.resx">
+      <DependentUpon>202303221953039_Ajuste Nome tabela.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

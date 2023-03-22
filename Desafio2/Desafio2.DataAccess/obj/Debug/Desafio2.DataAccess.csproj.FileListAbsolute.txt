@@ -29,3 +29,4 @@ D:\Projetos\Desafios\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.
 D:\Projetos\Desafios\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.Migrations.InitialCreate.resources
 D:\Projetos\Desafios\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.csproj.GenerateResource.cache
 D:\Projetos\Desafios\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.Migrations.ColunaAtivo.resources
+D:\Projetos\Desafios\Desafio2\Desafio2.DataAccess\obj\Debug\Desafio2.DataAccess.Migrations.AjusteNometabela.resources

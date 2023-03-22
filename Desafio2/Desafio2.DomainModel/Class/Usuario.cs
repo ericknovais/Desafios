@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -7,13 +8,17 @@ using System.Threading.Tasks;
 
 namespace Desafio2.DomainModel.Class
 {
-    [Table("Usuaios")]
+    [Table("Usuarios")]
     public class Usuario : EntidadeBase
     {
+        [Required]
+        [Display(Name ="Usuário")]
         public string Login { get; set; }
 
+        [Required]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
-
+        [Required]
         public string Senha { get; set; }
         
         public bool Ativo { get; set; }
@@ -23,6 +28,8 @@ namespace Desafio2.DomainModel.Class
         public override void Validar()
         {
             ValidarEmail();
+            ValidarCampoTexto(Login);
+            ValidarCampoTexto(Senha);
             base.Validar();
         }
 

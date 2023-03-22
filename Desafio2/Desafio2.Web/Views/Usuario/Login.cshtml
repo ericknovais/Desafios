@@ -2,12 +2,34 @@
 
 @{
     Layout = null;
+    if (TempData["Alerta"] != null)
+    {
+        @Html.Partial("../Modal/Alerta")
+    }
 }
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="~/Content/js/scripts.js"></script>
+    <link href="~/Content/css/styles.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $("#btnModalErro").click();
+        });
+    </script>
 </head>
 <body class="bg-primary">
     <div id="layoutAuthentication">
@@ -69,9 +91,6 @@
             </footer>
         </div>
     </div>
-    @section scripts{
-        <script src="~/Scripts/jquery.validate.min.js"></script>
-        <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-    }
+  
 </body>
 </html>
