@@ -41,11 +41,11 @@
     </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Desafio2.DataAccess, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Desafio2.DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DataAccess.dll</HintPath>
     </Reference>
-    <Reference Include="Desafio2.DomainModel, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Desafio2.DomainModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Desafio2\Desafio2.DataAccess\bin\Debug\Desafio2.DomainModel.dll</HintPath>
     </Reference>
