@@ -1,5 +1,6 @@
 D:\Projetos\Desafios\Desafio5\Desafio5.DataModel\bin\Debug\Desafio5.DataModel.dll
 D:\Projetos\Desafios\Desafio5\Desafio5.DataModel\bin\Debug\Desafio5.DataModel.pdb
+D:\Projetos\Desafios\Desafio5\Desafio5.DataModel\obj\Debug\Desafio5.DataModel.csproj.AssemblyReference.cache
 D:\Projetos\Desafios\Desafio5\Desafio5.DataModel\obj\Debug\Desafio5.DataModel.csproj.CoreCompileInputs.cache
 D:\Projetos\Desafios\Desafio5\Desafio5.DataModel\obj\Debug\Desafio5.DataModel.dll
 D:\Projetos\Desafios\Desafio5\Desafio5.DataModel\obj\Debug\Desafio5.DataModel.pdb
